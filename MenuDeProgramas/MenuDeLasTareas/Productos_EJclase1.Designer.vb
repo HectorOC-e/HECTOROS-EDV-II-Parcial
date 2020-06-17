@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Empleados
+Partial Class Productos_EJclase1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -29,21 +29,21 @@ Partial Class Empleados
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Magneto", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(266, 184)
+        Me.Label1.Location = New System.Drawing.Point(262, 198)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(249, 32)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "EMPLEADOS"
+        Me.Label1.Size = New System.Drawing.Size(226, 32)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "PRODUCTOS"
         '
-        'Empleados
+        'Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Empleados"
-        Me.Text = "Empleados"
+        Me.Name = "Productos"
+        Me.Text = "Productos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

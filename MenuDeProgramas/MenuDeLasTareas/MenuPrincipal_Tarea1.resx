@@ -120,35 +120,35 @@
   <metadata name="AnimacionSidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>160, 17</value>
   </metadata>
-  <data name="Animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation3.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation3.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAABIQwAASEML
 </value>
   </data>
-  <data name="Animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation3.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAD8L
 </value>
   </data>
-  <data name="Animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation3.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation3.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
@@ -158,54 +158,86 @@
   <metadata name="AnimacionSidebarBack.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>332, 17</value>
   </metadata>
-  <data name="Animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation4.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation2.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation4.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation2.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation4.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation2.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation4.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Animation2.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Animation4.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
 </value>
   </data>
+  <metadata name="CurvaSidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Sidebar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEUSURBVChTFcpXUsMwAAVAeSwspEhpTi9OLxAGzgCk916A
-        +1/j8bzfK4SYwPPm8P0lpNwgCHZQ6gitzzDmBmsfcO4PQjI+eTMoxme5hmFMqAMcY9JckWbMuF8IJcbQ
-        jMZfwDK6YIsUY1qfkGUM7R35OCYYrTdFkjElV8gwZtUeOca8uaDIWHI/ECnxjTRj1p8jZMwHGxQYS/qI
-        MmPV3lCLY8iY8yYoMBblEmXGitqhxlg3ZzQYm+4BUWAsMZYZq4w1xoixwdhibDN241gRX6gy1v0ZIsZm
-        sEaLsaMP6DL27RWDOEaMDW+MFmNbLtBl7KktBoxDc8Ir48jdIdriEx3Gnj9Fn3EYrPDCONJ7vDG+2ws+
-        3B3/HOyN8FiAzzUAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADkSURBVChTFcpZTsJQAABACAQCgVsYjaICsggtlrWyKKBI
+        XBLvf43HvPmeQqGQh2JxE0qlXSiX96FSOYZq9RRqtXOo139Co/EXms3/IC7ElbgWt+K7eBA/xS/xW/yN
+        MRNn4lLMxY24E/fiUTyJ5xgTcSJOxbm4El/FrfgmHsSPGIfiWEzFTJyJSzEXN+JO3MfYEwfiSEzEF3Eq
+        LsSVuBa3MbbFrtgXh+JYTMVMnIlLMY+xJT6IHfFJHIjPYiJOxKk4j/FGvBPvxbbYFfviUByLqZjFeCVe
+        i7diS3wUO2JPHIgjMQkX0bGBjh+wAdwAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="CurvaSidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="panelSubmenuTareas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADkSURBVChTFcpZTsJQAABACAQCgVsYjaICsggtlrWyKKBI
+        XBLvf43HvPmeQqGQh2JxE0qlXSiX96FSOYZq9RRqtXOo139Co/EXms3/IC7ElbgWt+K7eBA/xS/xW/yN
+        MRNn4lLMxY24E/fiUTyJ5xgTcSJOxbm4El/FrfgmHsSPGIfiWEzFTJyJSzEXN+JO3MfYEwfiSEzEF3Eq
+        LsSVuBa3MbbFrtgXh+JYTMVMnIlLMY+xJT6IHfFJHIjPYiJOxKk4j/FGvBPvxbbYFfviUByLqZjFeCVe
+        i7diS3wUO2JPHIgjMQkX0bGBjh+wAdwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="panelSubMenuClases.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADkSURBVChTFcpZTsJQAABACAQCgVsYjaICsggtlrWyKKBI
+        XBLvf43HvPmeQqGQh2JxE0qlXSiX96FSOYZq9RRqtXOo139Co/EXms3/IC7ElbgWt+K7eBA/xS/xW/yN
+        MRNn4lLMxY24E/fiUTyJ5xgTcSJOxbm4El/FrfgmHsSPGIfiWEzFTJyJSzEXN+JO3MfYEwfiSEzEF3Eq
+        LsSVuBa3MbbFrtgXh+JYTMVMnIlLMY+xJT6IHfFJHIjPYiJOxKk4j/FGvBPvxbbYFfviUByLqZjFeCVe
+        i7diS3wUO2JPHIgjMQkX0bGBjh+wAdwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA5SURBVChTY2BgcP3PyOjxn5nZ6z8Li+9/Njb//+zsQf85
+        OUP+c3GF/+fhifzPyxvzf1QhXRXG/AcAJGWII2IVHZkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="AnimacionSidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 17</value>
+  </metadata>
+  <metadata name="AnimacionSidebarBack.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>332, 17</value>
   </metadata>
 </root>

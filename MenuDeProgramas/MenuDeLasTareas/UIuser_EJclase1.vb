@@ -1,5 +1,5 @@
 ﻿Imports System.Runtime.InteropServices
-Public Class UIuser
+Public Class UIuser_EJclase1
 
 
 
@@ -12,8 +12,8 @@ Public Class UIuser
     End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
-        End
-
+        Me.Close()
+        MenuPrincipal_Tarea1.Show()
     End Sub
 
     Private Sub btnMaximizar_Click(sender As Object, e As EventArgs) Handles btnMaximizar.Click
@@ -77,12 +77,12 @@ Public Class UIuser
     End Sub
 
     Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
-        abrirFormulario(Productos)
+        abrirFormulario(Productos_EJclase1)
 
     End Sub
 
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
-        abrirFormulario(Empleados)
+        abrirFormulario(Empleados_EJclase1)
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click

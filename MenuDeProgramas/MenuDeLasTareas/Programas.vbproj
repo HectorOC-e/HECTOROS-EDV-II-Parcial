@@ -77,17 +77,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Empleados.Designer.vb">
-      <DependentUpon>Empleados.vb</DependentUpon>
+    <Compile Include="Empleados_EJclase1.Designer.vb">
+      <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Empleados.vb">
+    <Compile Include="Empleados_EJclase1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.vb">
+    <Compile Include="MenuPrincipal_Tarea1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.vb">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    <Compile Include="MenuPrincipal_Tarea1.Designer.vb">
+      <DependentUpon>MenuPrincipal_Tarea1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -106,25 +106,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Productos.Designer.vb">
-      <DependentUpon>Productos.vb</DependentUpon>
+    <Compile Include="Productos_EJclase1.Designer.vb">
+      <DependentUpon>Productos_EJclase1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos.vb">
+    <Compile Include="Productos_EJclase1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIuser.Designer.vb">
-      <DependentUpon>UIuser.vb</DependentUpon>
+    <Compile Include="UIuser_EJclase1.Designer.vb">
+      <DependentUpon>UIuser_EJclase1.vb</DependentUpon>
     </Compile>
-    <Compile Include="UIuser.vb">
+    <Compile Include="UIuser_EJclase1.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Empleados.resx">
-      <DependentUpon>Empleados.vb</DependentUpon>
+    <EmbeddedResource Include="Empleados_EJclase1.resx">
+      <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal_Tarea1.resx">
+      <DependentUpon>MenuPrincipal_Tarea1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -132,11 +132,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
-      <DependentUpon>Productos.vb</DependentUpon>
+    <EmbeddedResource Include="Productos_EJclase1.resx">
+      <DependentUpon>Productos_EJclase1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIuser.resx">
-      <DependentUpon>UIuser.vb</DependentUpon>
+    <EmbeddedResource Include="UIuser_EJclase1.resx">
+      <DependentUpon>UIuser_EJclase1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ganancias_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vb_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

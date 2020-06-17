@@ -1,6 +1,6 @@
 ﻿
 Imports System.Runtime.InteropServices
-Public Class MenuPrincipal
+Public Class MenuPrincipal_Tarea1
 
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
@@ -42,6 +42,7 @@ Public Class MenuPrincipal
             SidebarWrapper.Width = 90
             lineasidebar.Width = 52
             AnimacionSidebar.Show(Sidebar)
+            hidesubmenu()
 
         Else
 
@@ -50,6 +51,7 @@ Public Class MenuPrincipal
             SidebarWrapper.Width = 300
             lineasidebar.Width = 252
             AnimacionSidebarBack.Show(Sidebar)
+            hidesubmenu()
 
         End If
 
@@ -59,5 +61,49 @@ Public Class MenuPrincipal
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
 
+    End Sub
+    Private Sub abrirFormularios(ByVal formHijo As Object)
+        If FormulariosHijos.Controls.Count > 0 Then
+            Me.FormulariosHijos.Controls.RemoveAt(0)
+        End If
+        Dim frm As Form = TryCast(formHijo, Form)
+        frm.TopLevel = False
+        frm.Dock = DockStyle.Fill
+        Me.FormulariosHijos.Controls.Add(frm)
+        Me.FormulariosHijos.Tag = frm
+        frm.Show()
+    End Sub
+
+
+    Private Sub hidesubmenu()
+        panelSubMenuClases.Visible = False
+        panelSubmenuTareas.Visible = False
+
+    End Sub
+
+    Private Sub MenuPrincipal_Tarea1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        hidesubmenu()
+    End Sub
+    Private Sub mostrarsubmenu(submenu As Panel)
+        If submenu.Visible = False Then
+            hidesubmenu()
+            submenu.Visible = True
+        Else
+            submenu.Visible = False
+        End If
+    End Sub
+
+    Private Sub btnMenuEClases_Click(sender As Object, e As EventArgs) Handles btnMenuEClases.Click
+        mostrarsubmenu(panelSubMenuClases)
+    End Sub
+
+    Private Sub btnTareas_Click(sender As Object, e As EventArgs) Handles btnTareas.Click
+        mostrarsubmenu(panelSubmenuTareas)
+    End Sub
+
+    Private Sub btnUIuser_Click(sender As Object, e As EventArgs) Handles btnUIuser.Click
+        Me.Hide()
+        UIuser_EJclase1.Show()
+        hidesubmenu()
     End Sub
 End Class
