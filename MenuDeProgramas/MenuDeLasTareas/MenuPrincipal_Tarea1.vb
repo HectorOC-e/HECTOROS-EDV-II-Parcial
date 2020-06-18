@@ -71,6 +71,7 @@ Public Class MenuPrincipal_Tarea1
         frm.Dock = DockStyle.Fill
         Me.FormulariosHijos.Controls.Add(frm)
         Me.FormulariosHijos.Tag = frm
+        frm.BringToFront()
         frm.Show()
     End Sub
 
@@ -105,5 +106,9 @@ Public Class MenuPrincipal_Tarea1
         Me.Hide()
         UIuser_EJclase1.Show()
         hidesubmenu()
+    End Sub
+
+    Private Sub btnArreglosUni_Click(sender As Object, e As EventArgs) Handles btnArreglosUni.Click
+        abrirFormularios(Arreglos)
     End Sub
 End Class

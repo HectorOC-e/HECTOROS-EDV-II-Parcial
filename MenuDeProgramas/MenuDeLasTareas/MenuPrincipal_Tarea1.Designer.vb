@@ -23,18 +23,18 @@ Partial Class MenuPrincipal_Tarea1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal_Tarea1))
-        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.MenuTop = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SidebarWrapper = New System.Windows.Forms.Panel()
         Me.FormulariosHijos = New System.Windows.Forms.Panel()
+        Me.titulo = New System.Windows.Forms.Label()
         Me.CurvaSidebar = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.AnimacionSidebar = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.AnimacionSidebarBack = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.icono = New System.Windows.Forms.PictureBox()
         Me.Sidebar = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.panelSubmenuTareas = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -60,7 +60,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.MenuTop.SuspendLayout()
         Me.SidebarWrapper.SuspendLayout()
         Me.FormulariosHijos.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.icono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Sidebar.SuspendLayout()
         Me.panelSubmenuTareas.SuspendLayout()
         Me.panelSubMenuClases.SuspendLayout()
@@ -71,7 +71,7 @@ Partial Class MenuPrincipal_Tarea1
         '
         'MenuTop
         '
-        Me.MenuTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.MenuTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.MenuTop.Controls.Add(Me.btnRestaurar)
         Me.MenuTop.Controls.Add(Me.btnMaximizar)
         Me.MenuTop.Controls.Add(Me.btnMinimizar)
@@ -101,7 +101,7 @@ Partial Class MenuPrincipal_Tarea1
         '
         'SidebarWrapper
         '
-        Me.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.SidebarWrapper.Controls.Add(Me.Sidebar)
         Me.AnimacionSidebarBack.SetDecoration(Me.SidebarWrapper, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionSidebar.SetDecoration(Me.SidebarWrapper, BunifuAnimatorNS.DecorationType.None)
@@ -114,8 +114,8 @@ Partial Class MenuPrincipal_Tarea1
         'FormulariosHijos
         '
         Me.FormulariosHijos.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.FormulariosHijos.Controls.Add(Me.PictureBox1)
-        Me.FormulariosHijos.Controls.Add(Me.Label3)
+        Me.FormulariosHijos.Controls.Add(Me.icono)
+        Me.FormulariosHijos.Controls.Add(Me.titulo)
         Me.AnimacionSidebarBack.SetDecoration(Me.FormulariosHijos, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionSidebar.SetDecoration(Me.FormulariosHijos, BunifuAnimatorNS.DecorationType.None)
         Me.FormulariosHijos.Dock = System.Windows.Forms.DockStyle.Fill
@@ -123,6 +123,18 @@ Partial Class MenuPrincipal_Tarea1
         Me.FormulariosHijos.Name = "FormulariosHijos"
         Me.FormulariosHijos.Size = New System.Drawing.Size(1467, 1022)
         Me.FormulariosHijos.TabIndex = 1
+        '
+        'titulo
+        '
+        Me.titulo.AutoSize = True
+        Me.AnimacionSidebar.SetDecoration(Me.titulo, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.titulo, BunifuAnimatorNS.DecorationType.None)
+        Me.titulo.Font = New System.Drawing.Font("Times New Roman", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.titulo.Location = New System.Drawing.Point(174, 214)
+        Me.titulo.Name = "titulo"
+        Me.titulo.Size = New System.Drawing.Size(650, 89)
+        Me.titulo.TabIndex = 0
+        Me.titulo.Text = "Programas Hector"
         '
         'CurvaSidebar
         '
@@ -133,67 +145,55 @@ Partial Class MenuPrincipal_Tarea1
         '
         Me.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.AnimacionSidebar.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 1
-        Animation3.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation3.RotateCoeff = 0!
-        Animation3.RotateLimit = 0!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 2.0!
-        Animation3.TransparencyCoeff = 0!
-        Me.AnimacionSidebar.DefaultAnimation = Animation3
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 1
+        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 2.0!
+        Animation1.TransparencyCoeff = 0!
+        Me.AnimacionSidebar.DefaultAnimation = Animation1
         '
         'AnimacionSidebarBack
         '
         Me.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.AnimacionSidebarBack.Cursor = Nothing
-        Animation4.AnimateOnlyDifferences = True
-        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
-        Animation4.LeafCoeff = 0!
-        Animation4.MaxTime = 1.0!
-        Animation4.MinTime = 0!
-        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
-        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
-        Animation4.MosaicSize = 0
-        Animation4.Padding = New System.Windows.Forms.Padding(0)
-        Animation4.RotateCoeff = 0!
-        Animation4.RotateLimit = 0!
-        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
-        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
-        Animation4.TimeCoeff = 0!
-        Animation4.TransparencyCoeff = 0!
-        Me.AnimacionSidebarBack.DefaultAnimation = Animation4
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.AnimacionSidebarBack.DefaultAnimation = Animation2
         '
-        'Label3
+        'icono
         '
-        Me.Label3.AutoSize = True
-        Me.AnimacionSidebar.SetDecoration(Me.Label3, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.Label3, BunifuAnimatorNS.DecorationType.None)
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(174, 214)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(650, 89)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Programas Hector"
-        '
-        'PictureBox1
-        '
-        Me.AnimacionSidebar.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
-        Me.PictureBox1.Image = Global.MenuDeLasTareas.My.Resources.Resources.vb_64px
-        Me.PictureBox1.Location = New System.Drawing.Point(429, 343)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(162, 164)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.AnimacionSidebar.SetDecoration(Me.icono, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.icono, BunifuAnimatorNS.DecorationType.None)
+        Me.icono.Image = Global.MenuDeLasTareas.My.Resources.Resources.vb_64px
+        Me.icono.Location = New System.Drawing.Point(491, 314)
+        Me.icono.Name = "icono"
+        Me.icono.Size = New System.Drawing.Size(162, 164)
+        Me.icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.icono.TabIndex = 1
+        Me.icono.TabStop = False
         '
         'Sidebar
         '
@@ -253,7 +253,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(0, 120)
         Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Button2.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.Button2.Size = New System.Drawing.Size(360, 40)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Button2"
@@ -275,7 +275,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Location = New System.Drawing.Point(0, 80)
         Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Button3.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.Button3.Size = New System.Drawing.Size(360, 40)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Arreglos Bidimensionales"
@@ -297,7 +297,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.Location = New System.Drawing.Point(0, 40)
         Me.Button5.Name = "Button5"
-        Me.Button5.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Button5.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.Button5.Size = New System.Drawing.Size(360, 40)
         Me.Button5.TabIndex = 1
         Me.Button5.Text = "Arreglos unidimensionales"
@@ -319,7 +319,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button6.ForeColor = System.Drawing.Color.White
         Me.Button6.Location = New System.Drawing.Point(0, 0)
         Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Button6.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.Button6.Size = New System.Drawing.Size(360, 40)
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "UIuser"
@@ -329,6 +329,7 @@ Partial Class MenuPrincipal_Tarea1
         '
         'btnTareas
         '
+        Me.btnTareas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnTareas.BackColor = System.Drawing.Color.Transparent
         Me.AnimacionSidebar.SetDecoration(Me.btnTareas, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionSidebarBack.SetDecoration(Me.btnTareas, BunifuAnimatorNS.DecorationType.None)
@@ -339,6 +340,8 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTareas.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTareas.ForeColor = System.Drawing.Color.White
+        Me.btnTareas.Image = Global.MenuDeLasTareas.My.Resources.Resources.school_30px
+        Me.btnTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnTareas.Location = New System.Drawing.Point(0, 348)
         Me.btnTareas.Name = "btnTareas"
         Me.btnTareas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -382,9 +385,9 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(0, 120)
+        Me.Button4.Location = New System.Drawing.Point(0, 122)
         Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Button4.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.Button4.Size = New System.Drawing.Size(360, 40)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Button4"
@@ -404,9 +407,9 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnArreglosBi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnArreglosBi.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnArreglosBi.ForeColor = System.Drawing.Color.White
-        Me.btnArreglosBi.Location = New System.Drawing.Point(0, 80)
+        Me.btnArreglosBi.Location = New System.Drawing.Point(0, 82)
         Me.btnArreglosBi.Name = "btnArreglosBi"
-        Me.btnArreglosBi.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.btnArreglosBi.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.btnArreglosBi.Size = New System.Drawing.Size(360, 40)
         Me.btnArreglosBi.TabIndex = 2
         Me.btnArreglosBi.Text = "Arreglos Bidimensionales"
@@ -426,9 +429,9 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnArreglosUni.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnArreglosUni.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnArreglosUni.ForeColor = System.Drawing.Color.White
-        Me.btnArreglosUni.Location = New System.Drawing.Point(0, 40)
+        Me.btnArreglosUni.Location = New System.Drawing.Point(0, 42)
         Me.btnArreglosUni.Name = "btnArreglosUni"
-        Me.btnArreglosUni.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.btnArreglosUni.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
         Me.btnArreglosUni.Size = New System.Drawing.Size(360, 40)
         Me.btnArreglosUni.TabIndex = 1
         Me.btnArreglosUni.Text = "Arreglos unidimensionales"
@@ -450,8 +453,8 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnUIuser.ForeColor = System.Drawing.Color.White
         Me.btnUIuser.Location = New System.Drawing.Point(0, 0)
         Me.btnUIuser.Name = "btnUIuser"
-        Me.btnUIuser.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.btnUIuser.Size = New System.Drawing.Size(360, 40)
+        Me.btnUIuser.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnUIuser.Size = New System.Drawing.Size(360, 42)
         Me.btnUIuser.TabIndex = 0
         Me.btnUIuser.Text = "UIuser"
         Me.btnUIuser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -460,6 +463,7 @@ Partial Class MenuPrincipal_Tarea1
         '
         'btnMenuEClases
         '
+        Me.btnMenuEClases.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnMenuEClases.BackColor = System.Drawing.Color.Transparent
         Me.AnimacionSidebar.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionSidebarBack.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
@@ -470,6 +474,8 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnMenuEClases.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMenuEClases.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMenuEClases.ForeColor = System.Drawing.Color.White
+        Me.btnMenuEClases.Image = Global.MenuDeLasTareas.My.Resources.Resources.classroom_30px
+        Me.btnMenuEClases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMenuEClases.Location = New System.Drawing.Point(0, 90)
         Me.btnMenuEClases.Name = "btnMenuEClases"
         Me.btnMenuEClases.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -642,7 +648,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.SidebarWrapper.ResumeLayout(False)
         Me.FormulariosHijos.ResumeLayout(False)
         Me.FormulariosHijos.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.icono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Sidebar.ResumeLayout(False)
         Me.panelSubmenuTareas.ResumeLayout(False)
         Me.panelSubMenuClases.ResumeLayout(False)
@@ -683,6 +689,6 @@ Partial Class MenuPrincipal_Tarea1
     Friend WithEvents btnArreglosBi As Button
     Friend WithEvents btnArreglosUni As Button
     Friend WithEvents btnUIuser As Button
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents icono As PictureBox
+    Friend WithEvents titulo As Label
 End Class

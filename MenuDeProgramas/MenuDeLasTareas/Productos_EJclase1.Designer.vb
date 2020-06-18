@@ -35,14 +35,15 @@ Partial Class Productos_EJclase1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PRODUCTOS"
         '
-        'Productos
+        'Productos_EJclase1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Productos"
+        Me.Name = "Productos_EJclase1"
         Me.Text = "Productos"
         Me.ResumeLayout(False)
         Me.PerformLayout()

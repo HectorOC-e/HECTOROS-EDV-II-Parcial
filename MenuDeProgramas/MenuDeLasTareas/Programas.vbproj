@@ -77,6 +77,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arreglos.Designer.vb">
+      <DependentUpon>Arreglos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Empleados_EJclase1.Designer.vb">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Arreglos.resx">
+      <DependentUpon>Arreglos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados_EJclase1.resx">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +195,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vb_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foreclosure_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\study_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\study_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
