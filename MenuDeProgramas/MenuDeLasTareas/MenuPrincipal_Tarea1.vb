@@ -34,7 +34,6 @@ Public Class MenuPrincipal_Tarea1
     End Sub
 
     Private Sub btnmenu_Click(sender As Object, e As EventArgs) Handles btnmenu.Click
-
         If Sidebar.Width = 270 Then
 
             Sidebar.Visible = False
@@ -62,17 +61,24 @@ Public Class MenuPrincipal_Tarea1
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
 
     End Sub
-    Private Sub abrirFormularios(ByVal formHijo As Object)
-        If FormulariosHijos.Controls.Count > 0 Then
-            Me.FormulariosHijos.Controls.RemoveAt(0)
-        End If
-        Dim frm As Form = TryCast(formHijo, Form)
-        frm.TopLevel = False
-        frm.Dock = DockStyle.Fill
-        Me.FormulariosHijos.Controls.Add(frm)
-        Me.FormulariosHijos.Tag = frm
-        frm.BringToFront()
-        frm.Show()
+    Private Formulario As Form = Nothing
+    Private Sub abrirFormularios(ByVal formHijo As Form)
+        Try
+            If Formulario IsNot Nothing Then
+                Formulario.Close()
+            End If
+            Formulario = formHijo
+            formHijo.TopLevel = False
+            formHijo.FormBorderStyle = FormBorderStyle.None
+            formHijo.Dock = DockStyle.Fill
+            FormulariosHijos.Controls.Add(formHijo)
+            FormulariosHijos.Tag = formHijo
+            formHijo.BringToFront()
+            formHijo.Show()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
     End Sub
 
 
@@ -93,22 +99,19 @@ Public Class MenuPrincipal_Tarea1
             submenu.Visible = False
         End If
     End Sub
-
-    Private Sub btnMenuEClases_Click(sender As Object, e As EventArgs) Handles btnMenuEClases.Click
+    Private Sub btnMenuEClases_Click_1(sender As Object, e As EventArgs) Handles btnMenuEClases.Click
         mostrarsubmenu(panelSubMenuClases)
     End Sub
 
-    Private Sub btnTareas_Click(sender As Object, e As EventArgs) Handles btnTareas.Click
-        mostrarsubmenu(panelSubmenuTareas)
+    Private Sub btnUIuser_Click_1(sender As Object, e As EventArgs) Handles btnUIuser.Click
+        abrirFormularios(UIuser_EJclase1)
     End Sub
 
-    Private Sub btnUIuser_Click(sender As Object, e As EventArgs) Handles btnUIuser.Click
-        Me.Hide()
-        UIuser_EJclase1.Show()
-        hidesubmenu()
-    End Sub
-
-    Private Sub btnArreglosUni_Click(sender As Object, e As EventArgs) Handles btnArreglosUni.Click
+    Private Sub btnArreglosUni_Click_1(sender As Object, e As EventArgs) Handles btnArreglosUni.Click
         abrirFormularios(Arreglos)
+    End Sub
+
+    Private Sub btnProgramasTarea_Click(sender As Object, e As EventArgs) Handles btnProgramasTarea.Click
+        mostrarsubmenu(panelSubmenuTareas)
     End Sub
 End Class
