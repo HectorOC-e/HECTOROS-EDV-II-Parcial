@@ -114,4 +114,8 @@ Public Class MenuPrincipal_Tarea1
     Private Sub btnProgramasTarea_Click(sender As Object, e As EventArgs) Handles btnProgramasTarea.Click
         mostrarsubmenu(panelSubmenuTareas)
     End Sub
+
+    Private Sub btnLibretadeahorros_Click(sender As Object, e As EventArgs) Handles btnLibretadeahorros.Click
+        abrirFormularios(Libretadeahorros)
+    End Sub
 End Class

@@ -89,6 +89,12 @@
     <Compile Include="Empleados_EJclase1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Libretadeahorros.Designer.vb">
+      <DependentUpon>Libretadeahorros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libretadeahorros.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuPrincipal_Tarea1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados_EJclase1.resx">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libretadeahorros.resx">
+      <DependentUpon>Libretadeahorros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal_Tarea1.resx">
       <DependentUpon>MenuPrincipal_Tarea1.vb</DependentUpon>

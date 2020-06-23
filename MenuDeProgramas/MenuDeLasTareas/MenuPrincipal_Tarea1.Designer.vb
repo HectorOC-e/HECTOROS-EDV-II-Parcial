@@ -23,9 +23,9 @@ Partial Class MenuPrincipal_Tarea1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal_Tarea1))
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.MenuTop = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.Button()
         Me.btnMaximizar = New System.Windows.Forms.Button()
@@ -40,6 +40,13 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnProgramasTarea = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.panelSubMenuClases = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLibretadeahorros = New System.Windows.Forms.Button()
+        Me.btnArreglosUni = New System.Windows.Forms.Button()
+        Me.btnUIuser = New System.Windows.Forms.Button()
+        Me.btnMenuEClases = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lineasidebar = New Bunifu.Framework.UI.BunifuSeparator()
@@ -49,22 +56,15 @@ Partial Class MenuPrincipal_Tarea1
         Me.CurvaSidebar = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.AnimacionSidebar = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.AnimacionSidebarBack = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.btnMenuEClases = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.panelSubMenuClases = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.btnArreglosUni = New System.Windows.Forms.Button()
-        Me.btnUIuser = New System.Windows.Forms.Button()
-        Me.btnProgramasTarea = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.MenuTop.SuspendLayout()
         CType(Me.btnmenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SidebarWrapper.SuspendLayout()
         Me.Sidebar.SuspendLayout()
         Me.panelSubmenuTareas.SuspendLayout()
+        Me.panelSubMenuClases.SuspendLayout()
         Me.BunifuGradientPanel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FormulariosHijos.SuspendLayout()
-        Me.panelSubMenuClases.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuTop
@@ -322,6 +322,194 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'btnProgramasTarea
+        '
+        Me.btnProgramasTarea.Activecolor = System.Drawing.Color.Navy
+        Me.btnProgramasTarea.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnProgramasTarea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnProgramasTarea.BorderRadius = 0
+        Me.btnProgramasTarea.ButtonText = "            Programas Tareas"
+        Me.btnProgramasTarea.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AnimacionSidebar.SetDecoration(Me.btnProgramasTarea, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnProgramasTarea, BunifuAnimatorNS.DecorationType.None)
+        Me.btnProgramasTarea.DisabledColor = System.Drawing.Color.Gray
+        Me.btnProgramasTarea.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnProgramasTarea.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnProgramasTarea.Iconimage = Global.MenuDeLasTareas.My.Resources.Resources.school_30px
+        Me.btnProgramasTarea.Iconimage_right = Nothing
+        Me.btnProgramasTarea.Iconimage_right_Selected = Nothing
+        Me.btnProgramasTarea.Iconimage_Selected = Nothing
+        Me.btnProgramasTarea.IconMarginLeft = 0
+        Me.btnProgramasTarea.IconMarginRight = 0
+        Me.btnProgramasTarea.IconRightVisible = True
+        Me.btnProgramasTarea.IconRightZoom = 0R
+        Me.btnProgramasTarea.IconVisible = True
+        Me.btnProgramasTarea.IconZoom = 90.0R
+        Me.btnProgramasTarea.IsTab = False
+        Me.btnProgramasTarea.Location = New System.Drawing.Point(0, 357)
+        Me.btnProgramasTarea.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnProgramasTarea.Name = "btnProgramasTarea"
+        Me.btnProgramasTarea.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnProgramasTarea.OnHovercolor = System.Drawing.Color.Cyan
+        Me.btnProgramasTarea.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.btnProgramasTarea.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnProgramasTarea.selected = False
+        Me.btnProgramasTarea.Size = New System.Drawing.Size(360, 59)
+        Me.btnProgramasTarea.TabIndex = 15
+        Me.btnProgramasTarea.Text = "            Programas Tareas"
+        Me.btnProgramasTarea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnProgramasTarea.Textcolor = System.Drawing.Color.White
+        Me.btnProgramasTarea.TextFont = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'panelSubMenuClases
+        '
+        Me.panelSubMenuClases.BackColor = System.Drawing.Color.Transparent
+        Me.panelSubMenuClases.BackgroundImage = CType(resources.GetObject("panelSubMenuClases.BackgroundImage"), System.Drawing.Image)
+        Me.panelSubMenuClases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.panelSubMenuClases.Controls.Add(Me.Button1)
+        Me.panelSubMenuClases.Controls.Add(Me.btnLibretadeahorros)
+        Me.panelSubMenuClases.Controls.Add(Me.btnArreglosUni)
+        Me.panelSubMenuClases.Controls.Add(Me.btnUIuser)
+        Me.AnimacionSidebarBack.SetDecoration(Me.panelSubMenuClases, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebar.SetDecoration(Me.panelSubMenuClases, BunifuAnimatorNS.DecorationType.None)
+        Me.panelSubMenuClases.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelSubMenuClases.GradientBottomLeft = System.Drawing.Color.DodgerBlue
+        Me.panelSubMenuClases.GradientBottomRight = System.Drawing.Color.Cyan
+        Me.panelSubMenuClases.GradientTopLeft = System.Drawing.SystemColors.Highlight
+        Me.panelSubMenuClases.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.panelSubMenuClases.Location = New System.Drawing.Point(0, 149)
+        Me.panelSubMenuClases.Name = "panelSubMenuClases"
+        Me.panelSubMenuClases.Quality = 10
+        Me.panelSubMenuClases.Size = New System.Drawing.Size(360, 208)
+        Me.panelSubMenuClases.TabIndex = 14
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(0, 122)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.Button1.Size = New System.Drawing.Size(360, 40)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Button1"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btnLibretadeahorros
+        '
+        Me.btnLibretadeahorros.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.btnLibretadeahorros, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnLibretadeahorros, BunifuAnimatorNS.DecorationType.None)
+        Me.btnLibretadeahorros.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnLibretadeahorros.FlatAppearance.BorderSize = 0
+        Me.btnLibretadeahorros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnLibretadeahorros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.btnLibretadeahorros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLibretadeahorros.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLibretadeahorros.ForeColor = System.Drawing.Color.White
+        Me.btnLibretadeahorros.Location = New System.Drawing.Point(0, 82)
+        Me.btnLibretadeahorros.Name = "btnLibretadeahorros"
+        Me.btnLibretadeahorros.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnLibretadeahorros.Size = New System.Drawing.Size(360, 40)
+        Me.btnLibretadeahorros.TabIndex = 2
+        Me.btnLibretadeahorros.Text = "Libreta de Ahorros"
+        Me.btnLibretadeahorros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLibretadeahorros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnLibretadeahorros.UseVisualStyleBackColor = False
+        '
+        'btnArreglosUni
+        '
+        Me.btnArreglosUni.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.btnArreglosUni, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnArreglosUni, BunifuAnimatorNS.DecorationType.None)
+        Me.btnArreglosUni.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnArreglosUni.FlatAppearance.BorderSize = 0
+        Me.btnArreglosUni.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnArreglosUni.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.btnArreglosUni.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnArreglosUni.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnArreglosUni.ForeColor = System.Drawing.Color.White
+        Me.btnArreglosUni.Location = New System.Drawing.Point(0, 42)
+        Me.btnArreglosUni.Name = "btnArreglosUni"
+        Me.btnArreglosUni.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnArreglosUni.Size = New System.Drawing.Size(360, 40)
+        Me.btnArreglosUni.TabIndex = 1
+        Me.btnArreglosUni.Text = "Arreglos unidimensionales"
+        Me.btnArreglosUni.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnArreglosUni.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnArreglosUni.UseVisualStyleBackColor = False
+        '
+        'btnUIuser
+        '
+        Me.btnUIuser.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.btnUIuser, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnUIuser, BunifuAnimatorNS.DecorationType.None)
+        Me.btnUIuser.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnUIuser.FlatAppearance.BorderSize = 0
+        Me.btnUIuser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnUIuser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.btnUIuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUIuser.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUIuser.ForeColor = System.Drawing.Color.White
+        Me.btnUIuser.Location = New System.Drawing.Point(0, 0)
+        Me.btnUIuser.Name = "btnUIuser"
+        Me.btnUIuser.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnUIuser.Size = New System.Drawing.Size(360, 42)
+        Me.btnUIuser.TabIndex = 0
+        Me.btnUIuser.Text = "UIuser"
+        Me.btnUIuser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnUIuser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnUIuser.UseVisualStyleBackColor = False
+        '
+        'btnMenuEClases
+        '
+        Me.btnMenuEClases.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnMenuEClases.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnMenuEClases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMenuEClases.BorderRadius = 0
+        Me.btnMenuEClases.ButtonText = "            Programas Clase"
+        Me.btnMenuEClases.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AnimacionSidebar.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
+        Me.btnMenuEClases.DisabledColor = System.Drawing.Color.Gray
+        Me.btnMenuEClases.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnMenuEClases.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnMenuEClases.Iconimage = Global.MenuDeLasTareas.My.Resources.Resources.study_96px
+        Me.btnMenuEClases.Iconimage_right = Nothing
+        Me.btnMenuEClases.Iconimage_right_Selected = Nothing
+        Me.btnMenuEClases.Iconimage_Selected = Nothing
+        Me.btnMenuEClases.IconMarginLeft = 0
+        Me.btnMenuEClases.IconMarginRight = 0
+        Me.btnMenuEClases.IconRightVisible = True
+        Me.btnMenuEClases.IconRightZoom = 0R
+        Me.btnMenuEClases.IconVisible = True
+        Me.btnMenuEClases.IconZoom = 90.0R
+        Me.btnMenuEClases.IsTab = False
+        Me.btnMenuEClases.Location = New System.Drawing.Point(0, 90)
+        Me.btnMenuEClases.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMenuEClases.Name = "btnMenuEClases"
+        Me.btnMenuEClases.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnMenuEClases.OnHovercolor = System.Drawing.Color.Cyan
+        Me.btnMenuEClases.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.btnMenuEClases.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnMenuEClases.selected = False
+        Me.btnMenuEClases.Size = New System.Drawing.Size(360, 59)
+        Me.btnMenuEClases.TabIndex = 10
+        Me.btnMenuEClases.Text = "            Programas Clase"
+        Me.btnMenuEClases.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnMenuEClases.Textcolor = System.Drawing.Color.White
+        Me.btnMenuEClases.TextFont = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'BunifuGradientPanel1
         '
         Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
@@ -423,231 +611,43 @@ Partial Class MenuPrincipal_Tarea1
         '
         Me.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.AnimacionSidebar.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 1
-        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 2.0!
-        Animation1.TransparencyCoeff = 0!
-        Me.AnimacionSidebar.DefaultAnimation = Animation1
+        Animation3.AnimateOnlyDifferences = True
+        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
+        Animation3.LeafCoeff = 0!
+        Animation3.MaxTime = 1.0!
+        Animation3.MinTime = 0!
+        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
+        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
+        Animation3.MosaicSize = 1
+        Animation3.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation3.RotateCoeff = 0!
+        Animation3.RotateLimit = 0!
+        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
+        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
+        Animation3.TimeCoeff = 2.0!
+        Animation3.TransparencyCoeff = 0!
+        Me.AnimacionSidebar.DefaultAnimation = Animation3
         '
         'AnimacionSidebarBack
         '
         Me.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.AnimacionSidebarBack.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(0)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 0!
-        Me.AnimacionSidebarBack.DefaultAnimation = Animation2
-        '
-        'btnMenuEClases
-        '
-        Me.btnMenuEClases.Activecolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnMenuEClases.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnMenuEClases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMenuEClases.BorderRadius = 0
-        Me.btnMenuEClases.ButtonText = "            Programas Clase"
-        Me.btnMenuEClases.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AnimacionSidebar.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.btnMenuEClases, BunifuAnimatorNS.DecorationType.None)
-        Me.btnMenuEClases.DisabledColor = System.Drawing.Color.Gray
-        Me.btnMenuEClases.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnMenuEClases.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnMenuEClases.Iconimage = Global.MenuDeLasTareas.My.Resources.Resources.study_96px
-        Me.btnMenuEClases.Iconimage_right = Nothing
-        Me.btnMenuEClases.Iconimage_right_Selected = Nothing
-        Me.btnMenuEClases.Iconimage_Selected = Nothing
-        Me.btnMenuEClases.IconMarginLeft = 0
-        Me.btnMenuEClases.IconMarginRight = 0
-        Me.btnMenuEClases.IconRightVisible = True
-        Me.btnMenuEClases.IconRightZoom = 0R
-        Me.btnMenuEClases.IconVisible = True
-        Me.btnMenuEClases.IconZoom = 90.0R
-        Me.btnMenuEClases.IsTab = False
-        Me.btnMenuEClases.Location = New System.Drawing.Point(0, 90)
-        Me.btnMenuEClases.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btnMenuEClases.Name = "btnMenuEClases"
-        Me.btnMenuEClases.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnMenuEClases.OnHovercolor = System.Drawing.Color.Cyan
-        Me.btnMenuEClases.OnHoverTextColor = System.Drawing.SystemColors.Highlight
-        Me.btnMenuEClases.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnMenuEClases.selected = False
-        Me.btnMenuEClases.Size = New System.Drawing.Size(360, 59)
-        Me.btnMenuEClases.TabIndex = 10
-        Me.btnMenuEClases.Text = "            Programas Clase"
-        Me.btnMenuEClases.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnMenuEClases.Textcolor = System.Drawing.Color.White
-        Me.btnMenuEClases.TextFont = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'panelSubMenuClases
-        '
-        Me.panelSubMenuClases.BackColor = System.Drawing.Color.Transparent
-        Me.panelSubMenuClases.BackgroundImage = CType(resources.GetObject("panelSubMenuClases.BackgroundImage"), System.Drawing.Image)
-        Me.panelSubMenuClases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.panelSubMenuClases.Controls.Add(Me.Button1)
-        Me.panelSubMenuClases.Controls.Add(Me.Button7)
-        Me.panelSubMenuClases.Controls.Add(Me.btnArreglosUni)
-        Me.panelSubMenuClases.Controls.Add(Me.btnUIuser)
-        Me.AnimacionSidebarBack.SetDecoration(Me.panelSubMenuClases, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebar.SetDecoration(Me.panelSubMenuClases, BunifuAnimatorNS.DecorationType.None)
-        Me.panelSubMenuClases.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelSubMenuClases.GradientBottomLeft = System.Drawing.Color.DodgerBlue
-        Me.panelSubMenuClases.GradientBottomRight = System.Drawing.Color.Cyan
-        Me.panelSubMenuClases.GradientTopLeft = System.Drawing.SystemColors.Highlight
-        Me.panelSubMenuClases.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.panelSubMenuClases.Location = New System.Drawing.Point(0, 149)
-        Me.panelSubMenuClases.Name = "panelSubMenuClases"
-        Me.panelSubMenuClases.Quality = 10
-        Me.panelSubMenuClases.Size = New System.Drawing.Size(360, 208)
-        Me.panelSubMenuClases.TabIndex = 14
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 122)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(360, 40)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.Button7, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.Button7, BunifuAnimatorNS.DecorationType.None)
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(0, 82)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(360, 40)
-        Me.Button7.TabIndex = 2
-        Me.Button7.Text = "Arreglos Bidimensionales"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'btnArreglosUni
-        '
-        Me.btnArreglosUni.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.btnArreglosUni, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.btnArreglosUni, BunifuAnimatorNS.DecorationType.None)
-        Me.btnArreglosUni.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnArreglosUni.FlatAppearance.BorderSize = 0
-        Me.btnArreglosUni.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnArreglosUni.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.btnArreglosUni.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnArreglosUni.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnArreglosUni.ForeColor = System.Drawing.Color.White
-        Me.btnArreglosUni.Location = New System.Drawing.Point(0, 42)
-        Me.btnArreglosUni.Name = "btnArreglosUni"
-        Me.btnArreglosUni.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.btnArreglosUni.Size = New System.Drawing.Size(360, 40)
-        Me.btnArreglosUni.TabIndex = 1
-        Me.btnArreglosUni.Text = "Arreglos unidimensionales"
-        Me.btnArreglosUni.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnArreglosUni.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnArreglosUni.UseVisualStyleBackColor = False
-        '
-        'btnUIuser
-        '
-        Me.btnUIuser.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.btnUIuser, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.btnUIuser, BunifuAnimatorNS.DecorationType.None)
-        Me.btnUIuser.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUIuser.FlatAppearance.BorderSize = 0
-        Me.btnUIuser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnUIuser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.btnUIuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUIuser.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUIuser.ForeColor = System.Drawing.Color.White
-        Me.btnUIuser.Location = New System.Drawing.Point(0, 0)
-        Me.btnUIuser.Name = "btnUIuser"
-        Me.btnUIuser.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.btnUIuser.Size = New System.Drawing.Size(360, 42)
-        Me.btnUIuser.TabIndex = 0
-        Me.btnUIuser.Text = "UIuser"
-        Me.btnUIuser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUIuser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnUIuser.UseVisualStyleBackColor = False
-        '
-        'btnProgramasTarea
-        '
-        Me.btnProgramasTarea.Activecolor = System.Drawing.Color.Navy
-        Me.btnProgramasTarea.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnProgramasTarea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnProgramasTarea.BorderRadius = 0
-        Me.btnProgramasTarea.ButtonText = "            Programas Tareas"
-        Me.btnProgramasTarea.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AnimacionSidebar.SetDecoration(Me.btnProgramasTarea, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.btnProgramasTarea, BunifuAnimatorNS.DecorationType.None)
-        Me.btnProgramasTarea.DisabledColor = System.Drawing.Color.Gray
-        Me.btnProgramasTarea.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnProgramasTarea.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnProgramasTarea.Iconimage = Global.MenuDeLasTareas.My.Resources.Resources.school_30px
-        Me.btnProgramasTarea.Iconimage_right = Nothing
-        Me.btnProgramasTarea.Iconimage_right_Selected = Nothing
-        Me.btnProgramasTarea.Iconimage_Selected = Nothing
-        Me.btnProgramasTarea.IconMarginLeft = 0
-        Me.btnProgramasTarea.IconMarginRight = 0
-        Me.btnProgramasTarea.IconRightVisible = True
-        Me.btnProgramasTarea.IconRightZoom = 0R
-        Me.btnProgramasTarea.IconVisible = True
-        Me.btnProgramasTarea.IconZoom = 90.0R
-        Me.btnProgramasTarea.IsTab = False
-        Me.btnProgramasTarea.Location = New System.Drawing.Point(0, 357)
-        Me.btnProgramasTarea.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btnProgramasTarea.Name = "btnProgramasTarea"
-        Me.btnProgramasTarea.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnProgramasTarea.OnHovercolor = System.Drawing.Color.Cyan
-        Me.btnProgramasTarea.OnHoverTextColor = System.Drawing.SystemColors.Highlight
-        Me.btnProgramasTarea.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnProgramasTarea.selected = False
-        Me.btnProgramasTarea.Size = New System.Drawing.Size(360, 59)
-        Me.btnProgramasTarea.TabIndex = 15
-        Me.btnProgramasTarea.Text = "            Programas Tareas"
-        Me.btnProgramasTarea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnProgramasTarea.Textcolor = System.Drawing.Color.White
-        Me.btnProgramasTarea.TextFont = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Animation4.AnimateOnlyDifferences = True
+        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
+        Animation4.LeafCoeff = 0!
+        Animation4.MaxTime = 1.0!
+        Animation4.MinTime = 0!
+        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
+        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
+        Animation4.MosaicSize = 0
+        Animation4.Padding = New System.Windows.Forms.Padding(0)
+        Animation4.RotateCoeff = 0!
+        Animation4.RotateLimit = 0!
+        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
+        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
+        Animation4.TimeCoeff = 0!
+        Animation4.TransparencyCoeff = 0!
+        Me.AnimacionSidebarBack.DefaultAnimation = Animation4
         '
         'MenuPrincipal_Tarea1
         '
@@ -669,12 +669,12 @@ Partial Class MenuPrincipal_Tarea1
         Me.SidebarWrapper.ResumeLayout(False)
         Me.Sidebar.ResumeLayout(False)
         Me.panelSubmenuTareas.ResumeLayout(False)
+        Me.panelSubMenuClases.ResumeLayout(False)
         Me.BunifuGradientPanel1.ResumeLayout(False)
         Me.BunifuGradientPanel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FormulariosHijos.ResumeLayout(False)
         Me.FormulariosHijos.PerformLayout()
-        Me.panelSubMenuClases.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -705,7 +705,7 @@ Partial Class MenuPrincipal_Tarea1
     Friend WithEvents btnMenuEClases As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents panelSubMenuClases As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnLibretadeahorros As Button
     Friend WithEvents btnArreglosUni As Button
     Friend WithEvents btnUIuser As Button
     Friend WithEvents btnProgramasTarea As Bunifu.Framework.UI.BunifuFlatButton
