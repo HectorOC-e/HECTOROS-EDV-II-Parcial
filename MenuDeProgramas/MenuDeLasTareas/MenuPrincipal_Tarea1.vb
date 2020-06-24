@@ -108,7 +108,7 @@ Public Class MenuPrincipal_Tarea1
     End Sub
 
     Private Sub btnArreglosUni_Click_1(sender As Object, e As EventArgs) Handles btnArreglosUni.Click
-        abrirFormularios(Arreglos)
+        abrirFormularios(Arreglos_EJclase2)
     End Sub
 
     Private Sub btnProgramasTarea_Click(sender As Object, e As EventArgs) Handles btnProgramasTarea.Click
@@ -116,6 +116,10 @@ Public Class MenuPrincipal_Tarea1
     End Sub
 
     Private Sub btnLibretadeahorros_Click(sender As Object, e As EventArgs) Handles btnLibretadeahorros.Click
-        abrirFormularios(Libretadeahorros)
+        abrirFormularios(Libretadeahorros_EJclase3)
+    End Sub
+
+    Private Sub btnBolsaSolidaria_Click(sender As Object, e As EventArgs) Handles btnBolsaSolidaria.Click
+        abrirFormularios(Bolsa_solidaria)
     End Sub
 End Class

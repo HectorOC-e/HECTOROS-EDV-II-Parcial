@@ -1,4 +1,4 @@
-﻿Public Class Libretadeahorros
+﻿Public Class Libretadeahorros_EJclase3
     Private monto(99) As Double
     Private Usuario(99, 5) As String
     Private Registro, User As Integer

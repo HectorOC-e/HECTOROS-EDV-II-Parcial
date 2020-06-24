@@ -1,4 +1,4 @@
-﻿Public Class Arreglos
+﻿Public Class Arreglos_EJclase2
     Private mComputadoras(,) As String
     Private cantComputadoras As Integer
     Private index As Byte

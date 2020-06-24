@@ -77,10 +77,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arreglos.Designer.vb">
-      <DependentUpon>Arreglos.vb</DependentUpon>
+    <Compile Include="Arreglos_EJclase2.Designer.vb">
+      <DependentUpon>Arreglos_EJclase2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Arreglos.vb">
+    <Compile Include="Arreglos_EJclase2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bolsa solidaria.Designer.vb">
+      <DependentUpon>Bolsa solidaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bolsa solidaria.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleados_EJclase1.Designer.vb">
@@ -89,10 +95,10 @@
     <Compile Include="Empleados_EJclase1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Libretadeahorros.Designer.vb">
-      <DependentUpon>Libretadeahorros.vb</DependentUpon>
+    <Compile Include="Libretadeahorros_EJclase3.Designer.vb">
+      <DependentUpon>Libretadeahorros_EJclase3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Libretadeahorros.vb">
+    <Compile Include="Libretadeahorros_EJclase3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal_Tarea1.vb">
@@ -132,14 +138,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Arreglos.resx">
-      <DependentUpon>Arreglos.vb</DependentUpon>
+    <EmbeddedResource Include="Arreglos_EJclase2.resx">
+      <DependentUpon>Arreglos_EJclase2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bolsa solidaria.resx">
+      <DependentUpon>Bolsa solidaria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados_EJclase1.resx">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Libretadeahorros.resx">
-      <DependentUpon>Libretadeahorros.vb</DependentUpon>
+    <EmbeddedResource Include="Libretadeahorros_EJclase3.resx">
+      <DependentUpon>Libretadeahorros_EJclase3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal_Tarea1.resx">
       <DependentUpon>MenuPrincipal_Tarea1.vb</DependentUpon>

@@ -23,9 +23,9 @@ Partial Class MenuPrincipal_Tarea1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal_Tarea1))
-        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.MenuTop = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.Button()
         Me.btnMaximizar = New System.Windows.Forms.Button()
@@ -39,7 +39,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnBolsaSolidaria = New System.Windows.Forms.Button()
         Me.btnProgramasTarea = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.panelSubMenuClases = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -220,7 +220,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.panelSubmenuTareas.Controls.Add(Me.Button2)
         Me.panelSubmenuTareas.Controls.Add(Me.Button3)
         Me.panelSubmenuTareas.Controls.Add(Me.Button5)
-        Me.panelSubmenuTareas.Controls.Add(Me.Button6)
+        Me.panelSubmenuTareas.Controls.Add(Me.btnBolsaSolidaria)
         Me.AnimacionSidebarBack.SetDecoration(Me.panelSubmenuTareas, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionSidebar.SetDecoration(Me.panelSubmenuTareas, BunifuAnimatorNS.DecorationType.None)
         Me.panelSubmenuTareas.Dock = System.Windows.Forms.DockStyle.Top
@@ -300,27 +300,27 @@ Partial Class MenuPrincipal_Tarea1
         Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnBolsaSolidaria
         '
-        Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.Button6, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.Button6, BunifuAnimatorNS.DecorationType.None)
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(0, 0)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(360, 40)
-        Me.Button6.TabIndex = 0
-        Me.Button6.Text = "UIuser"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnBolsaSolidaria.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.btnBolsaSolidaria, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnBolsaSolidaria, BunifuAnimatorNS.DecorationType.None)
+        Me.btnBolsaSolidaria.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBolsaSolidaria.FlatAppearance.BorderSize = 0
+        Me.btnBolsaSolidaria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnBolsaSolidaria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.btnBolsaSolidaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBolsaSolidaria.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBolsaSolidaria.ForeColor = System.Drawing.Color.White
+        Me.btnBolsaSolidaria.Location = New System.Drawing.Point(0, 0)
+        Me.btnBolsaSolidaria.Name = "btnBolsaSolidaria"
+        Me.btnBolsaSolidaria.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnBolsaSolidaria.Size = New System.Drawing.Size(360, 40)
+        Me.btnBolsaSolidaria.TabIndex = 0
+        Me.btnBolsaSolidaria.Text = "Bolsa Solidaria"
+        Me.btnBolsaSolidaria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBolsaSolidaria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBolsaSolidaria.UseVisualStyleBackColor = False
         '
         'btnProgramasTarea
         '
@@ -611,43 +611,43 @@ Partial Class MenuPrincipal_Tarea1
         '
         Me.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles
         Me.AnimacionSidebar.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 1
-        Animation3.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
-        Animation3.RotateCoeff = 0!
-        Animation3.RotateLimit = 0!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 2.0!
-        Animation3.TransparencyCoeff = 0!
-        Me.AnimacionSidebar.DefaultAnimation = Animation3
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 1
+        Animation1.Padding = New System.Windows.Forms.Padding(100, 50, 100, 150)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 2.0!
+        Animation1.TransparencyCoeff = 0!
+        Me.AnimacionSidebar.DefaultAnimation = Animation1
         '
         'AnimacionSidebarBack
         '
         Me.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
         Me.AnimacionSidebarBack.Cursor = Nothing
-        Animation4.AnimateOnlyDifferences = True
-        Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
-        Animation4.LeafCoeff = 0!
-        Animation4.MaxTime = 1.0!
-        Animation4.MinTime = 0!
-        Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
-        Animation4.MosaicShift = CType(resources.GetObject("Animation4.MosaicShift"), System.Drawing.PointF)
-        Animation4.MosaicSize = 0
-        Animation4.Padding = New System.Windows.Forms.Padding(0)
-        Animation4.RotateCoeff = 0!
-        Animation4.RotateLimit = 0!
-        Animation4.ScaleCoeff = CType(resources.GetObject("Animation4.ScaleCoeff"), System.Drawing.PointF)
-        Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
-        Animation4.TimeCoeff = 0!
-        Animation4.TransparencyCoeff = 0!
-        Me.AnimacionSidebarBack.DefaultAnimation = Animation4
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.AnimacionSidebarBack.DefaultAnimation = Animation2
         '
         'MenuPrincipal_Tarea1
         '
@@ -700,7 +700,7 @@ Partial Class MenuPrincipal_Tarea1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnBolsaSolidaria As Button
     Friend WithEvents titulo As Label
     Friend WithEvents btnMenuEClases As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents panelSubMenuClases As Bunifu.Framework.UI.BunifuGradientPanel
