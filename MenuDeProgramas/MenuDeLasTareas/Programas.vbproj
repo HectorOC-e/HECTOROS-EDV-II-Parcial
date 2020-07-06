@@ -89,10 +89,17 @@
     <Compile Include="Bolsa solidaria.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="conexion.vb" />
     <Compile Include="Empleados_EJclase1.Designer.vb">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
     </Compile>
     <Compile Include="Empleados_EJclase1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estudiantes.Designer.vb">
+      <DependentUpon>Estudiantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Libretadeahorros_EJclase3.Designer.vb">
@@ -146,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados_EJclase1.resx">
       <DependentUpon>Empleados_EJclase1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudiantes.resx">
+      <DependentUpon>Estudiantes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libretadeahorros_EJclase3.resx">
       <DependentUpon>Libretadeahorros_EJclase3.vb</DependentUpon>

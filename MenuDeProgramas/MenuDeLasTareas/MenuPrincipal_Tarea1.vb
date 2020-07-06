@@ -122,4 +122,8 @@ Public Class MenuPrincipal_Tarea1
     Private Sub btnBolsaSolidaria_Click(sender As Object, e As EventArgs) Handles btnBolsaSolidaria.Click
         abrirFormularios(Bolsa_solidaria)
     End Sub
+
+    Private Sub btnBaseEstudiantes_Click(sender As Object, e As EventArgs) Handles btnBaseEstudiantes.Click
+        abrirFormularios(Estudiantes)
+    End Sub
 End Class

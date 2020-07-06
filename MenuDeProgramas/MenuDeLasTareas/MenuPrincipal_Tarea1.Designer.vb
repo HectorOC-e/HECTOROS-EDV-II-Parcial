@@ -42,7 +42,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.btnBolsaSolidaria = New System.Windows.Forms.Button()
         Me.btnProgramasTarea = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.panelSubMenuClases = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnBaseEstudiantes = New System.Windows.Forms.Button()
         Me.btnLibretadeahorros = New System.Windows.Forms.Button()
         Me.btnArreglosUni = New System.Windows.Forms.Button()
         Me.btnUIuser = New System.Windows.Forms.Button()
@@ -366,7 +366,7 @@ Partial Class MenuPrincipal_Tarea1
         Me.panelSubMenuClases.BackColor = System.Drawing.Color.Transparent
         Me.panelSubMenuClases.BackgroundImage = CType(resources.GetObject("panelSubMenuClases.BackgroundImage"), System.Drawing.Image)
         Me.panelSubMenuClases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.panelSubMenuClases.Controls.Add(Me.Button1)
+        Me.panelSubMenuClases.Controls.Add(Me.btnBaseEstudiantes)
         Me.panelSubMenuClases.Controls.Add(Me.btnLibretadeahorros)
         Me.panelSubMenuClases.Controls.Add(Me.btnArreglosUni)
         Me.panelSubMenuClases.Controls.Add(Me.btnUIuser)
@@ -383,27 +383,27 @@ Partial Class MenuPrincipal_Tarea1
         Me.panelSubMenuClases.Size = New System.Drawing.Size(360, 208)
         Me.panelSubMenuClases.TabIndex = 14
         '
-        'Button1
+        'btnBaseEstudiantes
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.AnimacionSidebar.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionSidebarBack.SetDecoration(Me.Button1, BunifuAnimatorNS.DecorationType.None)
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 122)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(360, 40)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnBaseEstudiantes.BackColor = System.Drawing.Color.Transparent
+        Me.AnimacionSidebar.SetDecoration(Me.btnBaseEstudiantes, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionSidebarBack.SetDecoration(Me.btnBaseEstudiantes, BunifuAnimatorNS.DecorationType.None)
+        Me.btnBaseEstudiantes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBaseEstudiantes.FlatAppearance.BorderSize = 0
+        Me.btnBaseEstudiantes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnBaseEstudiantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue
+        Me.btnBaseEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBaseEstudiantes.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBaseEstudiantes.ForeColor = System.Drawing.Color.White
+        Me.btnBaseEstudiantes.Location = New System.Drawing.Point(0, 122)
+        Me.btnBaseEstudiantes.Name = "btnBaseEstudiantes"
+        Me.btnBaseEstudiantes.Padding = New System.Windows.Forms.Padding(70, 0, 0, 0)
+        Me.btnBaseEstudiantes.Size = New System.Drawing.Size(360, 40)
+        Me.btnBaseEstudiantes.TabIndex = 3
+        Me.btnBaseEstudiantes.Text = "Base de datos Estudiantes"
+        Me.btnBaseEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBaseEstudiantes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBaseEstudiantes.UseVisualStyleBackColor = False
         '
         'btnLibretadeahorros
         '
@@ -704,7 +704,7 @@ Partial Class MenuPrincipal_Tarea1
     Friend WithEvents titulo As Label
     Friend WithEvents btnMenuEClases As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents panelSubMenuClases As Bunifu.Framework.UI.BunifuGradientPanel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnBaseEstudiantes As Button
     Friend WithEvents btnLibretadeahorros As Button
     Friend WithEvents btnArreglosUni As Button
     Friend WithEvents btnUIuser As Button

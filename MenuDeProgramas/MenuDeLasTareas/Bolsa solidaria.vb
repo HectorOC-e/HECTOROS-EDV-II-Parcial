@@ -81,7 +81,6 @@
     Private Sub btnSolicitar_Click(sender As Object, e As EventArgs) Handles btnSolicitar.Click
         Dim encontrado As Integer
 
-
         encontrado = validar_beneficiario(txtIdentidad.Text)
         If txtIdentidad.Text.Length <> 13 Then
             MsgBox("Ingrese un numero de identidad correcto", vbExclamation + vbOKOnly, "Advertencia")
@@ -91,8 +90,6 @@
         Else
             guardar_Datos()
         End If
-
-
 
     End Sub
 
